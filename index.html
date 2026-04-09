@@ -39,6 +39,16 @@
     .cursor, .cursor-ring { display: none; }
   }
 
+
+  .yt-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    background: linear-gradient(135deg, var(--slate) 0%, var(--film) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   /* CUSTOM CURSOR */
   .cursor {
     position: fixed;
@@ -2084,8 +2094,8 @@
 
   /* ANIMATIONS ON SCROLL */
   .fade-up {
-    opacity: 0;
-    transform: translateY(32px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
   .fade-up.visible {
@@ -2290,7 +2300,7 @@
   <div class="onair-grid">
     <div class="onair-card fade-up" onclick="openFilm('ooYHVcVFwvA', 'Excedrin Migraine — Café')">
       <div class="onair-thumb">
-        <img src="https://img.youtube.com/vi/ooYHVcVFwvA/maxresdefault.jpg" alt="Excedrin Cafe TVC" onerror="this.src='https://img.youtube.com/vi/ooYHVcVFwvA/hqdefault.jpg">
+        <div class="yt-thumb-placeholder" data-vid="ooYHVcVFwvA"></div>
         <div class="onair-thumb-overlay">
           <div class="film-play" style="width:72px;height:72px;padding-left:5px;">
             <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
@@ -2309,7 +2319,7 @@
 
     <div class="onair-card fade-up" onclick="openFilm('sJYDEO3CAp0', 'Excedrin Migraine — Gamer')">
       <div class="onair-thumb">
-        <img src="https://img.youtube.com/vi/sJYDEO3CAp0/maxresdefault.jpg" alt="Excedrin Gamer TVC" onerror="this.src='https://img.youtube.com/vi/sJYDEO3CAp0/hqdefault.jpg">
+        <div class="yt-thumb-placeholder" data-vid="sJYDEO3CAp0"></div>
         <div class="onair-thumb-overlay">
           <div class="film-play" style="width:72px;height:72px;padding-left:5px;">
             <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
@@ -2352,7 +2362,7 @@
     </div>
     <div class="sc-inner" onclick="openFilm('JL-0MbonU58', 'Saint Cliff — Series Pilot')">
       <div class="sc-thumb">
-        <img src="https://img.youtube.com/vi/JL-0MbonU58/maxresdefault.jpg" alt="Saint Cliff Pilot" onerror="this.src='https://img.youtube.com/vi/JL-0MbonU58/hqdefault.jpg">
+        <div class="yt-thumb-placeholder" data-vid="JL-0MbonU58"></div>
         <div class="sc-thumb-overlay">
           <div class="film-play" style="width:88px;height:88px;padding-left:6px;">
             <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
@@ -2456,7 +2466,7 @@
   <!-- S.K.A.T.E -->
   <div class="skate-feature fade-up" onclick="openFilm('OO_9M8B3fTs', 's.k.a.t.e.')">
     <div class="skate-thumb">
-      <img src="https://img.youtube.com/vi/OO_9M8B3fTs/maxresdefault.jpg" alt="s.k.a.t.e." onerror="this.src='https://img.youtube.com/vi/OO_9M8B3fTs/hqdefault.jpg">
+      <div class="yt-thumb-placeholder" data-vid="OO_9M8B3fTs"></div>
       <div class="skate-overlay">
         <div class="film-play" style="width:80px;height:80px;">
           <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M8 5v14l11-7z"/></svg>
@@ -2483,7 +2493,7 @@
       <span class="skate-watch">Click to watch ↗</span>
     </div>
     <div class="skate-thumb">
-      <img src="https://img.youtube.com/vi/DJOYprn7rNI/maxresdefault.jpg" alt="The Gift" onerror="this.src='https://img.youtube.com/vi/DJOYprn7rNI/hqdefault.jpg">
+      <div class="yt-thumb-placeholder" data-vid="DJOYprn7rNI"></div>
       <div class="skate-overlay">
         <div class="film-play" style="width:80px;height:80px;">
           <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M8 5v14l11-7z"/></svg>
@@ -2498,7 +2508,7 @@
   <!-- EAST OF EDEN -->
   <div class="skate-feature fade-up" onclick="openFilm('uYeUoG5TL7A', 'East of Eden')">
     <div class="skate-thumb">
-      <img src="https://img.youtube.com/vi/uYeUoG5TL7A/maxresdefault.jpg" alt="East of Eden" onerror="this.src='https://img.youtube.com/vi/uYeUoG5TL7A/hqdefault.jpg">
+      <div class="yt-thumb-placeholder" data-vid="uYeUoG5TL7A"></div>
       <div class="skate-overlay">
         <div class="film-play" style="width:80px;height:80px;">
           <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M8 5v14l11-7z"/></svg>
@@ -2816,7 +2826,7 @@
 
     <div class="cs-card-right">
       <div class="vpn-thumb-wrap" onclick="openFilm('AWK56JtrqmM', 'Vagina Privacy Network')" style="cursor:none;">
-        <img src="https://img.youtube.com/vi/AWK56JtrqmM/maxresdefault.jpg" alt="Vagina Privacy Network" onerror="this.src='https://img.youtube.com/vi/AWK56JtrqmM/hqdefault.jpg">
+        <div class="yt-thumb-placeholder" data-vid="AWK56JtrqmM"></div>
         <div class="vpn-thumb-overlay">
           <div class="film-play" style="width:72px;height:72px;padding-left:5px;background:var(--gold);">
             <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
@@ -2957,7 +2967,7 @@
       Looking for a screenwriter to pen the next viral TikTok series? Need copy and creative activations that resonate with culture? Have a story you've always wanted to tell?
     </p>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#6008050c0c0f200c011512190e0113080c05190e09030f0c050b090e074e030f0d" class="contact-email"><span class="__cf_email__" data-cfemail="553d3039393a15393420272c3b34263d39302c3b3c363a39303e3c3b327b363a38">[email&#160;protected]</span></a>
+      <a href="mailto:hello@laurynashleynicoleking.com" class="contact-email">hello@laurynashleynicoleking.com</a>
       <span class="contact-divider">·</span>
       <a href="https://www.laurynashleynicoleking.com" target="_blank" class="contact-social">Portfolio ↗</a>
       <span class="contact-divider">·</span>
@@ -2972,7 +2982,7 @@
   <span class="footer-copy">© 2026 Lauryn Ashley Nicole King — All Rights Reserved</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Film lightbox
   function openFilm(videoId, title) {
     const lb = document.getElementById('filmLightbox');
